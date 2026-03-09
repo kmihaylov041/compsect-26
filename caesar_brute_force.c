@@ -22,7 +22,7 @@ void caesar_decrypt(char *input, char *output, int key) {
 void bruteforce_attack(char *cipher) {
         char buffer[256];
     
-        printf("--- BRUTE FORCE REPORT ---");
+        printf("--- BRUTE FORCE REPORT ---\n");
     
         for (int k = 1; k < 26; k++) {
             caesar_decrypt(cipher, buffer, k);
